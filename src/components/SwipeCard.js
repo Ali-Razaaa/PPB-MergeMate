@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const SwipeCard = () => {
-  const githubAccessToken = 'process.env.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'; // Hardcoded token
-
+  const githubAccessToken = process.env.REACT_APP_GITHUB_ACCESS_TOKEN
   const [projects, setProjects] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [swiped, setSwiped] = useState(null);

@@ -5,8 +5,7 @@ const Notifications = () => {
   const [loading, setLoading] = useState(true);
 
   // GitHub Token (ensure to store it securely, e.g., using environment variables)
-  const GITHUB_TOKEN = "process.env.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"; 
-
+  const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_ACCESS_TOKEN
   // Fetch GitHub notifications on component mount
   useEffect(() => {
     const getNotifications = async () => {

@@ -10,8 +10,7 @@ const AddProject = () => {
   });
   const [message, setMessage] = useState('');
 
-  const oauthToken = "process.env.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"; // Replace with your actual token
-
+  const oauthToken = process.env.REACT_APP_GITHUB_ACCESS_TOKEN
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProjectData((prevData) => ({

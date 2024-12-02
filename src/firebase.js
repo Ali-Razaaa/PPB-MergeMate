@@ -5,13 +5,13 @@ import { getAuth, GithubAuthProvider } from 'firebase/auth';
 
 // Your Firebase configuration object
 const firebaseConfig = {
-  apiKey: 'AIzaSyDlSvfwIixfjxjlMNIGe8thvVI6iia1kCU',
-  authDomain: 'merge-mate-65624.firebaseapp.com',
-  projectId: 'merge-mate-65624',
-  storageBucket: 'merge-mate-65624.firebasestorage.app',
-  messagingSenderId: '368246910040',
-  appId: '1:368246910040:web:e78184b6e5bfa7878cae2d',
-  measurementId: "G-8C46CQSFNK"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase

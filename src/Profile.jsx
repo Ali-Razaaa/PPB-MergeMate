@@ -8,8 +8,7 @@ const Profile = () => {
   const [loading, setLoading] = useState(true);
 
   // Hardcoded GitHub Token
-  const oauthToken = "process.env.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";  // Replace this with your actual token
-
+  const oauthToken = process.env.REACT_APP_GITHUB_ACCESS_TOKEN
   useEffect(() => {
     if (oauthToken) {
       const fetchGithubProfile = async () => {
